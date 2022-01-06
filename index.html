@@ -39,19 +39,33 @@
 
 
       <!-- ! Navigation -->
-      <nav>
-        <ul>
-          <li>
-            <a class="button" href="https://www.dropbox.com/s/pz8rfhm9mp8g0hl/Resume%20Alexandra%20Sergeychik.pdf?dl=0"
-              target="_blank">My Resume (PDF)</a>
+      <nav class="nav">
+
+        <a class="button" href="https://www.dropbox.com/s/pz8rfhm9mp8g0hl/Resume%20Alexandra%20Sergeychik.pdf?dl=0"
+          target="_blank">Resume (PDF)</a>
+
+        <ul class="list">
+          <li class="list_inline">
+            <a href="#contacts">Contacts</a>
           </li>
-          <li><a href="#contacts">Contacts</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#code">Code Example</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#languages">Languages</a></li>
+          <li class="list_inline">
+            <a href="#about">About</a>
+          </li>
+          <li class="list_inline">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="list_inline">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="list_inline">
+            <a href="#code">Code Example</a>
+          </li>
+          <li class="list_inline">
+            <a href="#education">Education</a>
+          </li>
+          <li class="list_inline">
+            <a href="#languages">Languages</a>
+          </li>
         </ul>
       </nav>
 
@@ -69,10 +83,11 @@
 
           <!-- ! Contacts -->
           <h2 id="contacts">Contacts</h2>
-          <ul>
-            <li><a href="mailto:aliaxandra@gmail.com" target="_blank">Email</a> | </li>
-            <li><a href="https://t.me/sanjaserge" target="_blank">Telegram</a> |</li>
-            <li><a href="https://discord.com/users/@aliaxandra#9450" target="_blank">Discord</a></li>
+          <ul class="list">
+            <li class="list_inline"><a href="mailto:aliaxandra@gmail.com" target="_blank">Email</a> | </li>
+            <li class="list_inline"><a href="https://t.me/sanjaserge" target="_blank">Telegram</a> |</li>
+            <li class="list_inline"><a href="https://discord.com/users/@aliaxandra#9450" target="_blank">Discord</a>
+            </li>
           </ul>
 
 
@@ -88,16 +103,16 @@
 
           <!-- ! Skills -->
           <h2 id="skills">Skills</h2>
-          <ul>
+          <ul class="list">
             <li>Design:</li>
-            <ul>
+            <ul class="list">
               <li>User Interface Design</li>
               <li>Graphic design</li>
               <li>Branding Identity</li>
               <li>User Experience Research (Novice)</li>
             </ul>
             <li>Front-end:</li>
-            <ul>
+            <ul class="list">
               <li>HTML</li>
               <li>CSS/SASS, BEM</li>
               <li>Git/Github (Novice)</li>
@@ -106,7 +121,7 @@
               <li>Python (Basic)</li>
             </ul>
             <li>Tools:</li>
-            <ul>
+            <ul class="list">
               <li>VSCode</li>
               <li>Sketch</li>
               <li>Figma</li>
@@ -128,14 +143,14 @@
 
           <!-- ! Experience -->
           <h2 id="experience">Experience</h2>
-          <ul>
+          <ul class="list">
             <li>Design</li>
-            <ul>
+            <ul class="list">
               <li><a href="https://www.behance.net/aliaxandra" target="_blank">Design Portfolio</a></li>
               <li><a href="https://www.instagram.com/aliaxandra/" target="_blank">Illustrations</a></li>
             </ul>
             <li>Code</li>
-            <ul>
+            <ul class="list">
               <li><a href="https://смерти.net/" target="_blank">Смерти.net:</a> HTML, CSS, JS</li>
               <li><a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
                   target="_blank">Repair Design Project:</a> HTML, CSS, JS</li>
@@ -147,7 +162,7 @@
                   target="_blank">Immigration Research:</a> HTML, CSS, JS</li>
             </ul>
             <li>Other</li>
-            <ul>
+            <ul class="list">
               <li><a href="http://tiny.cc/rss-ls" target="_blank">RS School LearnSpace Notion Template</a>- Knowledge
                 Base and Task Management System Dashboard for studying at RS School</li>
             </ul>
@@ -161,7 +176,8 @@ def get_multiples_3_or_5(number):
   number -= 1
   sum = 0
   for i in range(number):
-    if ( ((number % 3) == 0) or ((number % 5) == 0) ):
+    if ( ((number % 3) == 0)
+      or ((number % 5) == 0) ):
       sum = sum + number
     number-=1
   return sum
@@ -170,15 +186,18 @@ def get_multiples_3_or_5(number):
 
           <!-- ! Education -->
           <h2 id="education">Education</h2>
-          <ul>
-            <li>Codecademy: HTML, CSS, JS, Git and a bunch of other Courses</li>
-            <li>B.A. in Psychology</li>
+          <ul class="list">
+            <li>
+              <a href="https://www.codecademy.com/users/aliaxandra/achievements">Codecademy:</a> HTML, CSS, JS, Git and
+              a bunch of other Courses
+            </li>
+            <li>B.A. in Psychology at BSPU, Minsk</li>
           </ul>
 
 
           <!-- ! English -->
           <h2 id="languages">Languages</h2>
-          <ul>
+          <ul class="list">
             <li>Belarus (Native)</li>
             <li>Russian (Native)</li>
             <li>English: B1 (Intermediate)</li>
@@ -207,9 +226,10 @@ def get_multiples_3_or_5(number):
     <!-- ! Footer -->
     <footer class="footer">
       <nav>
-        <ul>
-          <li><a href="https://github.com/aliaxandra/">aliaxandra</a> 2022</li>
-          <li><a href="https://github.com/aliaxandra/"><img src="rss-logo.svg" alt=""></a></li>
+        <ul class="list">
+          <li class="list_inline"><a href="https://github.com/aliaxandra/">aliaxandra, 2022</a></li>
+          <li class="list_inline"><a href="https://github.com/aliaxandra/"><img src="rss-logo.svg"
+                alt="RS School Logotype" width="100px"></a></li>
         </ul>
       </nav>
     </footer>

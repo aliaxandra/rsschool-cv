@@ -26,6 +26,10 @@ h2 {
   margin-top: 20px;
 }
 
+pre {
+  font-family: "Source Code Pro", monospace;
+}
+
 .margin-medium {
   margin-top: 40px;
 }
@@ -37,7 +41,7 @@ h2 {
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px;
+  max-width: 860px;
 }
 
 @media (max-width: 800px) {
@@ -53,8 +57,6 @@ h2 {
   margin-block-end: 0;
 
   margin-top: 100px;
-  /* margin-right: -50px; */
-  /* margin-left: -100px; */
 
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -80,26 +82,13 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
-
+  margin-top: 2em;
 }
 
 @media (max-width: 800px) {
   .columns {
     display: block;
   }
-}
-
-.head-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 100%;
-  height: 400px;
-
-  background-image: url("assets/about@2x.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .name {
@@ -117,6 +106,22 @@ h2 {
     padding-bottom: 20px;
     font-size: 2em;
   }
+}
+
+.nav {
+  margin-top: 2rem;
+  font-size: small;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list_inline {
+  display: inline;
+  padding-right: 8px;
 }
 
 .footer {
