@@ -20,9 +20,11 @@
 <body>
   <div class="wrapper">
 
-    <!-- ! COLUMN 1 -->
-    <!-- ! Photo -->
 
+    <!-- ! COLUMN 1 -->
+
+
+    <!-- ! Photo -->
     <header>
       <div class="photo-wrapper">
         <img class="photo" src="photo.png" alt="" />
@@ -32,42 +34,50 @@
 
 
     <!-- ! Name -->
-
     <main>
       <h2 class="name">Alexandra Sergeychik</h2>
+
+
+      <!-- ! Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a class="button" href="https://www.dropbox.com/s/pz8rfhm9mp8g0hl/Resume%20Alexandra%20Sergeychik.pdf?dl=0"
+              target="_blank">My Resume (PDF)</a>
+          </li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#code">Code Example</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
 
 
 
 
 
       <!-- ! COLUMN 2 -->
-
       <section class="columns">
 
+
         <!-- ! Resume  -->
-
         <section class="column-left">
-          <p>
-            <a class="button" href="https://www.dropbox.com/s/pz8rfhm9mp8g0hl/Resume%20Alexandra%20Sergeychik.pdf?dl=0"
-              target="_blank">My Resume (PDF)</a>
-          </p>
-
 
 
           <!-- ! Contacts -->
-
-          <h2>Contacts</h2>
-          <p>
-            <a href="mailto:aliaxandra@gmail.com" target="_blank">Email</a> |
-            <a href="https://t.me/sanjaserge" target="_blank">Telegram</a> |
-            <a href="https://discord.com/users/@aliaxandra#9450" target="_blank">Discord</a>
-          </p>
-
+          <h2 id="contacts">Contacts</h2>
+          <ul>
+            <li><a href="mailto:aliaxandra@gmail.com" target="_blank">Email</a> | </li>
+            <li><a href="https://t.me/sanjaserge" target="_blank">Telegram</a> |</li>
+            <li><a href="https://discord.com/users/@aliaxandra#9450" target="_blank">Discord</a></li>
+          </ul>
 
 
           <!-- ! About -->
-
-          <h2>About</h2>
+          <h2 id="about">About</h2>
           <p>
             I’ve worked as a Communication and UI Designer for nine years. In
             the past year I've been studying UX Research. My goal today is to
@@ -76,10 +86,8 @@
           </p>
 
 
-
           <!-- ! Skills -->
-
-          <h2>Skills</h2>
+          <h2 id="skills">Skills</h2>
           <ul>
             <li>Design:</li>
             <ul>
@@ -118,11 +126,8 @@
         <section class="column-right">
 
 
-
-
           <!-- ! Experience -->
-
-          <h2>Experience</h2>
+          <h2 id="experience">Experience</h2>
           <ul>
             <li>Design</li>
             <ul>
@@ -149,9 +154,8 @@
           </ul>
 
 
-
           <!-- ! Code Example -->
-          <h2>Code Example</h2>
+          <h2 id="code">Code Example</h2>
           <pre>
 def get_multiples_3_or_5(number):
   number -= 1
@@ -164,19 +168,16 @@ def get_multiples_3_or_5(number):
             </pre>
 
 
-
           <!-- ! Education -->
-
-          <h2 class="margin-medium">Education</h2>
+          <h2 id="education">Education</h2>
           <ul>
             <li>Codecademy: HTML, CSS, JS, Git and a bunch of other Courses</li>
             <li>B.A. in Psychology</li>
           </ul>
 
 
-
           <!-- ! English -->
-          <h2 class="margin-medium">Languages</h2>
+          <h2 id="languages">Languages</h2>
           <ul>
             <li>Belarus (Native)</li>
             <li>Russian (Native)</li>
@@ -201,7 +202,17 @@ def get_multiples_3_or_5(number):
 
 
 
-    <footer class="footer"><b>Thank you</b> for your attention!</footer>
+
+
+    <!-- ! Footer -->
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="https://github.com/aliaxandra/">aliaxandra</a> 2022</li>
+          <li><a href="https://github.com/aliaxandra/"><img src="rss-logo.svg" alt=""></a></li>
+        </ul>
+      </nav>
+    </footer>
   </div>
 </body>
 
