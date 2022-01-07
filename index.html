@@ -27,15 +27,15 @@
     <!-- ! Photo -->
     <header>
       <div class="photo-wrapper">
-        <img class="photo" src="photo.png" alt="" />
+        <img class="photo" src="ss-bw-test.png" alt="" />
       </div>
-      <h1 class="header">Curriculum vitae</h1>
+      <h2 class="header">Curriculum vitae</h2>
     </header>
 
 
     <!-- ! Name -->
     <main>
-      <h2 class="name">Alexandra Sergeychik</h2>
+      <h1 class="name">Alexandra Sergeychik</h1>
 
 
       <!-- ! Navigation -->
@@ -44,26 +44,26 @@
         <a class="button" href="https://www.dropbox.com/s/pz8rfhm9mp8g0hl/Resume%20Alexandra%20Sergeychik.pdf?dl=0"
           target="_blank">Resume (PDF)</a>
 
-        <ul class="list">
-          <li class="list_inline">
+        <ul class="list nav__list">
+          <li class="list_inline list_small list_separated">
             <a href="#contacts">Contacts</a>
           </li>
-          <li class="list_inline">
+          <li class="list_inline list_small list_separated">
             <a href="#about">About</a>
           </li>
-          <li class="list_inline">
+          <li class="list_inline list_small list_separated">
             <a href="#skills">Skills</a>
           </li>
-          <li class="list_inline">
+          <li class="list_inline list_small list_separated">
             <a href="#experience">Experience</a>
           </li>
-          <li class="list_inline">
+          <li class="list_inline list_small list_separated">
             <a href="#code">Code Example</a>
           </li>
-          <li class="list_inline">
+          <li class="list_inline list_small list_separated">
             <a href="#education">Education</a>
           </li>
-          <li class="list_inline">
+          <li class="list_inline list_small">
             <a href="#languages">Languages</a>
           </li>
         </ul>
@@ -84,9 +84,12 @@
           <!-- ! Contacts -->
           <h2 id="contacts">Contacts</h2>
           <ul class="list">
-            <li class="list_inline"><a href="mailto:aliaxandra@gmail.com" target="_blank">Email</a> | </li>
-            <li class="list_inline"><a href="https://t.me/sanjaserge" target="_blank">Telegram</a> |</li>
-            <li class="list_inline"><a href="https://discord.com/users/@aliaxandra#9450" target="_blank">Discord</a>
+            <li class="list_inline list_small list_separated"><a href="mailto:aliaxandra@gmail.com"
+                target="_blank">Email</a></li>
+            <li class="list_inline list_small list_separated"><a href="https://t.me/sanjaserge"
+                target="_blank">Telegram</a></li>
+            <li class="list_inline list_small"><a href="https://discord.com/users/@aliaxandra#9450"
+                target="_blank">Discord</a>
             </li>
           </ul>
 
@@ -106,31 +109,45 @@
           <ul class="list">
             <li>Design:</li>
             <ul class="list">
-              <li>User Interface Design</li>
-              <li>Graphic design</li>
-              <li>Branding Identity</li>
-              <li>User Experience Research (Novice)</li>
+              <li class="list_inline list_small list_separated">User Interface Design</li>
+              <li class="list_inline list_small list_separated">Graphic design</li>
+              <li class="list_inline list_small list_separated">Branding Identity</li>
+              <li class="list_inline list_small">User Experience Research (Novice)</li>
             </ul>
             <li>Front-end:</li>
             <ul class="list">
-              <li>HTML</li>
-              <li>CSS/SASS, BEM</li>
-              <li>Git/Github (Novice)</li>
-              <li>JavaScript (Basic)</li>
-              <li>SQL (Basic)</li>
-              <li>Python (Basic)</li>
+              <li class="list_inline list_small list_separated">HTML</li>
+              <li class="list_inline list_small list_separated">CSS/SASS, BEM</li>
+              <li class="list_inline list_small list_separated">Git/Github (Novice)</li>
+              <li class="list_inline list_small list_separated">JavaScript (Basic)</li>
+              <li class="list_inline list_small list_separated">SQL (Basic)</li>
+              <li class="list_inline list_small">Python (Basic)</li>
             </ul>
             <li>Tools:</li>
             <ul class="list">
-              <li>VSCode</li>
-              <li>Sketch</li>
-              <li>Figma</li>
-              <li>Principle</li>
-              <li>Adobe Photoshop</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe Indesign</li>
+              <li class="list_inline list_small list_separated">VSCode</li>
+              <li class="list_inline list_small list_separated">Sketch</li>
+              <li class="list_inline list_small list_separated">Figma</li>
+              <li class="list_inline list_small list_separated">Principle</li>
+              <li class="list_inline list_small list_separated">Adobe Photoshop</li>
+              <li class="list_inline list_small list_separated">Adobe Illustrator</li>
+              <li class="list_inline list_small">Adobe Indesign</li>
             </ul>
           </ul>
+
+          <!-- ! Code Example -->
+          <h2 id="code">Code Example</h2>
+          <pre>
+def get_multiples_3_or_5(number):
+  number -= 1
+  sum = 0
+  for i in range(number):
+    if ( ((number % 3) == 0)
+      or ((number % 5) == 0) ):
+      sum = sum + number
+    number-=1
+  return sum
+          </pre>
         </section>
 
 
@@ -146,73 +163,72 @@
           <ul class="list">
             <li>Design</li>
             <ul class="list">
-              <li><a href="https://www.behance.net/aliaxandra" target="_blank">Design Portfolio</a></li>
-              <li><a href="https://www.instagram.com/aliaxandra/" target="_blank">Illustrations</a></li>
+              <li class="list_small"><a href="https://www.behance.net/aliaxandra" target="_blank">Design Portfolio</a>
+              </li>
+              <li class="list_small"><a href="https://www.instagram.com/aliaxandra/" target="_blank">Illustrations</a>
+              </li>
             </ul>
             <li>Code</li>
             <ul class="list">
-              <li><a href="https://смерти.net/" target="_blank">Смерти.net:</a> HTML, CSS, JS</li>
-              <li><a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
-                  target="_blank">Repair Design Project:</a> HTML, CSS, JS</li>
-              <li><a href="https://github.com/aliaxandra/cs50-project-finance" target="_blank">Finance:</a> HTML, CSS,
-                Python, SQL</li>
-              <li><a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
-                  target="_blank">The Yalow:</a> HTML, CSS</li>
-              <li><a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
-                  target="_blank">Immigration Research:</a> HTML, CSS, JS</li>
+              <li class="list_small">
+                <a href="https://смерти.net/" target="_blank">Смерти.net:</a> HTML, CSS, JS
+              </li>
+              <li class="list_small">
+                <a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
+                  target="_blank">Repair Design Project:</a> HTML, CSS, JS
+              </li>
+              <li class="list_small">
+                <a href="https://github.com/aliaxandra/cs50-project-finance" target="_blank">Finance:</a> HTML, CSS,
+                Python, SQL
+              </li>
+              <li class="list_small">
+                <a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
+                  target="_blank">The Yalow:</a> HTML, CSS
+              </li>
+              <li class="list_small">
+                <a href="https://github.com/aliaxandra/RS-2019-Q3-tasks/tree/master/html-css/repair-design-project"
+                  target="_blank">Immigration Research:</a> HTML, CSS, JS
+              </li>
             </ul>
             <li>Other</li>
             <ul class="list">
-              <li><a href="http://tiny.cc/rss-ls" target="_blank">RS School LearnSpace Notion Template</a>- Knowledge
-                Base and Task Management System Dashboard for studying at RS School</li>
+              <li class="list_small">
+                <a href="http://tiny.cc/rss-ls" target="_blank">RS School LearnSpace Notion Template</a>- Knowledge
+                Base and Task Management System Dashboard for studying at RS School
+              </li>
             </ul>
           </ul>
-
-
-          <!-- ! Code Example -->
-          <h2 id="code">Code Example</h2>
-          <pre>
-def get_multiples_3_or_5(number):
-  number -= 1
-  sum = 0
-  for i in range(number):
-    if ( ((number % 3) == 0)
-      or ((number % 5) == 0) ):
-      sum = sum + number
-    number-=1
-  return sum
-            </pre>
 
 
           <!-- ! Education -->
           <h2 id="education">Education</h2>
           <ul class="list">
-            <li>
+            <li class="list_small">
               <a href="https://www.codecademy.com/users/aliaxandra/achievements">Codecademy:</a> HTML, CSS, JS, Git and
               a bunch of other Courses
             </li>
-            <li>B.A. in Psychology at BSPU, Minsk</li>
+            <li class="list_small">B.A. in Psychology at BSPU, Minsk</li>
           </ul>
 
 
-          <!-- ! English -->
+          <!-- ! Languages -->
           <h2 id="languages">Languages</h2>
           <ul class="list">
-            <li>Belarus (Native)</li>
-            <li>Russian (Native)</li>
-            <li>English: B1 (Intermediate)</li>
-            <p>From EPAM test result on Nov 2020.</p>
-            <p>
-              I read and watch English all the time (including
-              technical manuals). My partner and I have traveled
-              to Asia and Europe for most part of the year over
-              the last decade (except COVID-19 times),
-              so I can talk, but still need practice to get it right.
-            </p>
+            <li class="list_small">Belarus (Native)</li>
+            <li class="list_small">Russian (Native)</li>
           </ul>
 
-
-
+          <h2>English</h2>
+          <ul class="list">
+            <li class="list_small">B1 (on Nov 2020)</li>
+          </ul>
+          <p>
+            I read and watch English all the time (including
+            technical manuals). My partner and I have traveled
+            to Asia and Europe for most part of the year over
+            the last decade (except COVID-19 times),
+            so I can talk, but still need practice to get it right.
+          </p>
 
 
         </section>
@@ -226,9 +242,9 @@ def get_multiples_3_or_5(number):
     <!-- ! Footer -->
     <footer class="footer">
       <nav>
-        <ul class="list">
-          <li class="list_inline"><a href="https://github.com/aliaxandra/">aliaxandra, 2022</a></li>
-          <li class="list_inline"><a href="https://github.com/aliaxandra/"><img src="rss-logo.svg"
+        <ul class="list footer__list">
+          <li class="list_inline"><a href="https://github.com/aliaxandra/" target="blank">aliaxandra, 2022</a></li>
+          <li class="list_inline"><a href="https://rs.school/js/" target="blank"><img src="rss-logo.svg"
                 alt="RS School Logotype" width="100px"></a></li>
         </ul>
       </nav>
