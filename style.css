@@ -4,18 +4,17 @@
 
 body {
   font-family: "Raleway", sans-serif;
-
-  background-color: black;
-  color: white;
-
   font-weight: 300;
   line-height: 1.5em;
+  color: #ffffff;
+
+  background-color: #000000;
 }
 
 a {
-  color: Aquamarine;
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
+  color: #7fffd4;
 }
 
 li {
@@ -31,6 +30,7 @@ h2 {
 ul {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -38,7 +38,7 @@ pre {
   font-family: "Source Code Pro", monospace;
   font-size: small;
   line-height: 1.6em;
-  color: lightgrey;
+  color: #d3d3d3;
 }
 
 .margin-medium {
@@ -48,45 +48,42 @@ pre {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-
+  max-width: 800px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px;
 }
 
 @media (max-width: 800px) {
   .wrapper {
     display: block;
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
 .header {
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  margin-top: 100px;
-
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
 
-  text-align: right;
+  margin-top: 100px;
+
   font-size: 3em;
   font-weight: 100;
   line-height: 1em;
+  text-align: right;
 }
 
 @media (max-width: 800px) {
   .header {
     transform: none;
-    margin-left: 0px;
+
+    margin-left: 0;
     margin-top: 1em;
     margin-bottom: 1em;
 
-    text-align: left;
     font-size: 1em;
+    text-align: left;
   }
 }
 
@@ -108,9 +105,9 @@ pre {
 
   font-size: 3em;
   font-weight: 100;
-  color: Aquamarine;
+  color: #7fffd4;
 
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
 }
 
 @media (max-width: 800px) {
@@ -134,7 +131,7 @@ pre {
 
 .list_small {
   font-size: small;
-  color: lightgrey;
+  color: #d3d3d3;
 }
 
 .list_separated::after {
@@ -148,7 +145,7 @@ pre {
   margin-top: 50px;
   padding: 1em;
 
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff;
 }
 
 .footer__list {
@@ -157,46 +154,36 @@ pre {
 }
 
 .tag {
-  padding-top: 3px;
-  padding-right: 6px;
-  padding-bottom: 3px;
-  padding-left: 6px;
   margin-right: 1px;
   margin-left: 2px;
+  padding: 3px 6px;
 
   font-size: smaller;
   font-weight: 500;
   color: black;
 
-  background-color: aquamarine;
+  background-color: #7fffd4;
   border-radius: 3px;
 }
 
 .button {
-  padding-top: 6px;
-  padding-right: 12px;
-  padding-bottom: 6px;
-  padding-left: 12px;
+  padding: 6px 12px;
 
   font-weight: 700;
   color: black;
 
-  background-color: aquamarine;
+  background-color: #7fffd4;
   border-radius: 3px;
 }
 
-.photo {
-  width: 144px;
-}
-
 .photo-wrapper {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 @media (max-width: 800px) {
   .photo-wrapper {
-  margin-top: 0;
+    margin-top: 0;
   }
 }
