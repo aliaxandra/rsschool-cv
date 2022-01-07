@@ -82,7 +82,8 @@ pre {
   .header {
     transform: none;
     margin-left: 0px;
-    margin-bottom: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
     text-align: left;
     font-size: 1em;
@@ -192,4 +193,10 @@ pre {
   margin-top: 100px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .photo-wrapper {
+  margin-top: 0;
+  }
 }
